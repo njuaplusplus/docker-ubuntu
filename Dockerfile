@@ -15,7 +15,7 @@ RUN echo 'APT::Install-Recommends 0;' >> /etc/apt/apt.conf.d/01norecommends \
  && apt-get install -y vim.tiny wget sudo net-tools ca-certificates unzip \
  && locale-gen en_US.UTF-8 \
  && dpkg-reconfigure locales \
-    rm -rf /var/lib/apt/lists/*
+ && rm -rf /var/lib/apt/lists/*
 ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
